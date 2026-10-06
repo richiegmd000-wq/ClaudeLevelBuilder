@@ -1,0 +1,43 @@
+{
+  "geode": "4.6.0",
+  "gd": {
+    "win": "2.2074",
+    "android": "2.2074",
+    "mac": "2.2074",
+    "ios": "2.2074"
+  },
+  "id": "richiegmd000.claude-level-builder",
+  "name": "Claude Level Builder",
+  "version": "v1.0.0",
+  "developer": "richiegmd000",
+  "description": "Claude (Sonnet 5.5) builds and decorates levels for you in the editor.",
+  "tags": ["editor", "utility", "online"],
+  "settings": {
+    "api-key": {
+      "type": "string",
+      "name": "Anthropic API Key",
+      "description": "Your key from console.anthropic.com. Stored locally only.",
+      "default": ""
+    },
+    "model": {
+      "type": "string",
+      "name": "Model",
+      "default": "claude-sonnet-5-5"
+    },
+    "max-tokens": {
+      "type": "int",
+      "name": "Max output tokens",
+      "default": 32000,
+      "min": 1000,
+      "max": 64000
+    },
+    "max-objects": {
+      "type": "int",
+      "name": "Max objects per request",
+      "description": "Safety cap so the editor does not freeze.",
+      "default": 5000,
+      "min": 1,
+      "max": 100000
+    }
+  }
+}
